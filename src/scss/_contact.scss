@@ -8,16 +8,30 @@
     background: black;
 
     div {
-        border: thin solid red;
+        
     }
 
     h2 {
-        border: thin solid red;
+        
         text-align: right;
         font-size: 30pt;
     }
 
     form {
-        border: thin solid red;
+        padding-top: 30pt;
+        color: #FFFFFF;
+
+        input {
+            
+            height: 28pt;
+            margin-right: 15pt;
+            color: #FFFFFF;
+            text-align: center;
+            background-color: #000000;
+            border: none;
+            border-bottom: thin solid #FFFFFF;
+        }
+
+    
     }
 }

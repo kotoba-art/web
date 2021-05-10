@@ -3,9 +3,33 @@
 
     img {
         &:first-of-type {
-            height: 100%;
+            width: 25vh;
             margin: 30pt 0;
         }
     }
+
+    div {
+        &:first-of-type {
+
+            h1 {
+                padding-left: 50pt;
+                padding-right: 50pt;
+                color: #b7b7b7;
+                font-size: 4.2em;
+                text-align: right;
+                letter-spacing: -0.05em;
+            }
+
+            p {
+                color: #5b5b5b;
+                font-size: 1.4em;
+                font-weight: 400;
+                line-height: 2em;
+                text-align: left;
+            }
+        }
+    }
+
+
 }
 

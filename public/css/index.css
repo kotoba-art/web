@@ -40,24 +40,20 @@ header img:first-of-type {
 
 #hero {
   text-align: center;
+  border: thin solid red;
 }
 #hero img:first-of-type {
-  width: 25vh;
+  height: 100%;
   margin: 30pt 0;
 }
+#hero div:first-of-type {
+  display: flex;
+  border: thin solid red;
+}
 #hero div:first-of-type h1 {
-  padding-left: 50pt;
-  padding-right: 50pt;
-  color: #b7b7b7;
-  font-size: 4.2em;
   text-align: right;
-  letter-spacing: -0.05em;
 }
 #hero div:first-of-type p {
-  color: #5b5b5b;
-  font-size: 1.4em;
-  font-weight: 400;
-  line-height: 2em;
   text-align: left;
 }
 
@@ -70,22 +66,16 @@ header img:first-of-type {
   color: #FFFFFF;
   background: black;
 }
+#contact div {
+  border: thin solid red;
+}
 #contact h2 {
+  border: thin solid red;
   text-align: right;
   font-size: 30pt;
 }
 #contact form {
-  padding-top: 30pt;
-  color: #FFFFFF;
-}
-#contact form input {
-  height: 28pt;
-  margin-right: 15pt;
-  color: #FFFFFF;
-  text-align: center;
-  background-color: #000000;
-  border: none;
-  border-bottom: thin solid #FFFFFF;
+  border: thin solid red;
 }
 
 /*# sourceMappingURL=index.css.map */
