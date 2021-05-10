@@ -2,7 +2,7 @@
   "name": "web",
   "version": "1.0.0",
   "description": "Kotoba Landing page",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "start": "sass --watch src/scss:public/css",
     "test": "echo \"Error: no test specified\" && exit 1"
