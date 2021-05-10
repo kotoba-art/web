@@ -1,0 +1,11 @@
+#hero {
+    text-align: center;
+
+    img {
+        &:first-of-type {
+            height: 100%;
+            margin: 30pt 0;
+        }
+    }
+}
+

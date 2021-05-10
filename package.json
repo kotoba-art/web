@@ -1,0 +1,23 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "Kotoba Landing page",
+  "main": "index.js",
+  "scripts": {
+    "start": "sass --watch src/scss:public/css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kotoba-art/web.git"
+  },
+  "author": "danielvichi@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kotoba-art/web/issues"
+  },
+  "homepage": "https://github.com/kotoba-art/web#readme",
+  "dependencies": {
+    "sass": "^1.32.12"
+  }
+}

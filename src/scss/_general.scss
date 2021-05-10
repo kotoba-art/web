@@ -1,0 +1,40 @@
+@use 'config';
+
+body {
+    height: 100vh;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-transform: uppercase;
+    font-weight: 100;line-height: 1em;
+}
+
+.btn {
+    font-size: 0.75em;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 5pt 30pt;
+    border-color: #000000;
+    border-radius: 0;
+    
+}
+
+.btn.white {
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+}
+
+header {
+    text-align: center;
+    padding: 20pt 0;
+    margin-bottom: 30pt;
+
+    border-bottom: config.$border;
+
+    img {
+        &:first-of-type {
+            width: 100pt;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+#contact {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    padding: 30pt 0;
+    color: #FFFFFF;
+    background: black;
+
+    div {
+        border: thin solid red;
+    }
+
+    h2 {
+        border: thin solid red;
+        text-align: right;
+        font-size: 30pt;
+    }
+
+    form {
+        border: thin solid red;
+    }
+}

@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap");
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  height: 100vh;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
+  font-weight: 100;
+  line-height: 1em;
+}
+
+.btn {
+  font-size: 0.75em;
+  text-transform: uppercase;
+  color: #000000;
+  padding: 5pt 30pt;
+  border-color: #000000;
+  border-radius: 0;
+}
+
+.btn.white {
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+}
+
+header {
+  text-align: center;
+  padding: 20pt 0;
+  margin-bottom: 30pt;
+  border-bottom: thin solid #c7c7c7;
+}
+header img:first-of-type {
+  width: 100pt;
+}
+
+#hero {
+  text-align: center;
+}
+#hero img:first-of-type {
+  height: 100%;
+  margin: 30pt 0;
+}
+
+#contact {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  padding: 30pt 0;
+  color: #FFFFFF;
+  background: black;
+}
+#contact div {
+  border: thin solid red;
+}
+#contact h2 {
+  border: thin solid red;
+  text-align: right;
+  font-size: 30pt;
+}
+#contact form {
+  border: thin solid red;
+}
+
+/*# sourceMappingURL=index.css.map */
