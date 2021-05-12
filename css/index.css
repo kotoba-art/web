@@ -8,6 +8,11 @@ body {
   font-weight: 400;
 }
 
+::selection {
+  color: #FFF;
+  background-color: #000;
+}
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-weight: 100;
@@ -17,15 +22,23 @@ h1, h2, h3, h4, h5, h6 {
 .btn {
   font-size: 0.75em;
   text-transform: uppercase;
-  color: #000000;
+  color: #000;
   padding: 5pt 30pt;
-  border-color: #000000;
+  border-color: #000;
   border-radius: 0;
+}
+.btn:hover {
+  color: #000;
+  background-color: #FFF;
+  border-color: #FFF;
 }
 
 .btn.white {
-  color: #FFFFFF;
-  border-color: #FFFFFF;
+  color: #FFF;
+  border-color: #FFF;
+}
+.btn.white:hover {
+  color: #000;
 }
 
 header {
@@ -44,6 +57,7 @@ header img:first-of-type {
 #hero img:first-of-type {
   width: 25vh;
   margin: 30pt 0;
+  transition: all 0.3s ease;
 }
 #hero div:first-of-type h1 {
   padding-left: 50pt;
@@ -61,6 +75,43 @@ header img:first-of-type {
   text-align: left;
 }
 
+@media screen and (max-width: 959px) {
+  #hero img:first-of-type {
+    width: 40vw;
+    height: auto;
+    margin: 30pt 0 60pt;
+  }
+  #hero div:first-of-type h1 {
+    padding-left: 120pt;
+    padding-right: 120pt;
+    text-align: center;
+  }
+  #hero div:first-of-type p {
+    padding-left: 50pt;
+    padding-right: 50pt;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  #hero img:first-of-type {
+    width: 40vw;
+    height: auto;
+    margin: 5pt 0 25pt;
+  }
+  #hero div:first-of-type h1 {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 20pt;
+    font-size: 3em;
+    font-weight: 400;
+  }
+  #hero div:first-of-type p {
+    padding-left: 15pt;
+    padding-right: 15pt;
+    font-size: 1.1em;
+    line-height: 1.7em;
+  }
+}
 #contact {
   position: absolute;
   bottom: 0;
@@ -70,6 +121,10 @@ header img:first-of-type {
   color: #FFFFFF;
   background: black;
 }
+#contact ::selection {
+  color: #000;
+  background-color: #FFF;
+}
 #contact h2 {
   text-align: right;
   font-size: 30pt;
@@ -78,7 +133,7 @@ header img:first-of-type {
   padding-top: 30pt;
   color: #FFFFFF;
 }
-#contact form input {
+#contact form input[type=email] {
   height: 28pt;
   margin-right: 15pt;
   color: #FFFFFF;
@@ -86,6 +141,44 @@ header img:first-of-type {
   background-color: #000000;
   border: none;
   border-bottom: thin solid #FFFFFF;
+  transition: all 0.3s ease;
+}
+#contact form input[type=email]:focus-visible {
+  outline: none;
+  box-shadow: 0 2pt 0 #FFF;
+}
+#contact form button {
+  transition: all 0.3s ease;
+}
+#contact form button:focus-visible {
+  outline: none;
+  box-shadow: 0 2pt 0 #FFF;
+}
+
+@media screen and (max-width: 959px) {
+  #contact h2 {
+    font-size: 21pt;
+  }
+  #contact form {
+    padding-top: 12pt;
+  }
+}
+@media screen and (max-width: 575px) {
+  #contact {
+    position: relative;
+    padding: 20pt 0;
+    margin-top: 40pt;
+  }
+  #contact h2 {
+    font-size: 15pt;
+    text-align: center;
+  }
+  #contact form {
+    padding-top: 12pt;
+  }
+  #contact form input[type=email] {
+    margin-bottom: 20pt;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

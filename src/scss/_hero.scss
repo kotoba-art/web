@@ -1,3 +1,5 @@
+@use 'config';
+
 #hero {
     text-align: center;
 
@@ -5,6 +7,7 @@
         &:first-of-type {
             width: 25vh;
             margin: 30pt 0;
+            transition: config.$transition
         }
     }
 
@@ -33,3 +36,70 @@
 
 }
 
+
+@media screen and (max-width: 959px) {
+    #hero {
+
+        img {
+            &:first-of-type {
+                width: 40vw;
+                height: auto;
+                margin: 30pt 0 60pt;
+            }
+        }
+        
+        div {
+            &:first-of-type {
+            
+                h1 {
+                    padding-left: 120pt;
+                    padding-right: 120pt;
+                    text-align: center;
+                }
+
+                p {
+                    padding-left: 50pt;
+                    padding-right: 50pt;
+                    text-align: center;
+                }
+
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #hero {
+        
+        img {
+            &:first-of-type {
+                width: 40vw;
+                height: auto;
+                margin: 5pt 0 25pt;
+            }
+        }
+
+        div {
+            &:first-of-type {
+
+                h1 {
+                    padding-left: 0;
+                    padding-right: 0;
+                    margin-bottom: 20pt;
+                    font-size: 3em;
+                    font-weight: 400;
+                }
+
+                p {
+                    padding-left: 15pt;
+                    padding-right: 15pt;
+                    font-size: 1.1em;
+                    line-height: 1.7em;
+                }
+
+            }
+        }
+
+    }
+}

@@ -1,3 +1,5 @@
+@use 'config';
+
 #contact {
     position: absolute;
     bottom: 0;
@@ -7,12 +9,12 @@
     color: #FFFFFF;
     background: black;
 
-    div {
-        
+    ::selection {
+        color: #000;
+        background-color: #FFF;
     }
 
     h2 {
-        
         text-align: right;
         font-size: 30pt;
     }
@@ -21,8 +23,7 @@
         padding-top: 30pt;
         color: #FFFFFF;
 
-        input {
-            
+        input[type="email"]  {
             height: 28pt;
             margin-right: 15pt;
             color: #FFFFFF;
@@ -30,8 +31,60 @@
             background-color: #000000;
             border: none;
             border-bottom: thin solid #FFFFFF;
+            transition: config.$transition;
+
+            &:focus-visible  {
+                outline: none;
+                box-shadow: 0 2pt 0 #FFF;
+            }
+        }
+
+        button {
+            transition: config.$transition;
+            
+            &:focus-visible  {
+                outline: none;
+                box-shadow: 0 2pt 0 #FFF;
+            }
         }
 
     
+    }
+}
+
+
+@media screen and (max-width: 959px) {
+    #contact {
+
+        h2 {
+            font-size: 21pt;
+        }
+
+        form {
+            padding-top: 12pt;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 575px) {
+    #contact {
+        position: relative;
+        padding: 20pt 0;
+        margin-top: 40pt;
+
+        h2 {
+            font-size: 15pt;
+            text-align: center;
+        }
+
+        form {
+            padding-top: 12pt;
+
+            input[type="email"] {
+                margin-bottom: 20pt;
+            }
+        }
+        
     }
 }
