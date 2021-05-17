@@ -54,20 +54,21 @@
 
     
     }
+
 }
-
-
 
 @media screen and (max-width: 959px) {
     #contact {
 
         h2 {
-            font-size: 21pt;
+            font-size: 18pt;
+            span {
+                font-size: 12pt;
+            }
         }
 
         form {
-            padding-top: 12pt;
-
+            padding-top: 22pt;
         }
         
     }
@@ -93,5 +94,28 @@
         }
         
     }
+}
 
+
+@media screen and (max-width: 812px) and (orientation: landscape) {
+    #contact {
+        padding: 10pt 0;
+        h2 {
+            font-size: 15pt;
+
+            span {
+                font-size: 12pt;
+            }
+        } 
+        
+        
+        form {
+            padding-top: 15pt;
+
+            input {
+                font-size: 12pt;
+            }
+            
+        }
+    } 
 }

@@ -75,6 +75,16 @@ header img:first-of-type {
   text-align: left;
 }
 
+@media screen and (max-width: 1024px) {
+  #hero div:first-of-type h1 {
+    padding-left: 0;
+    padding-right: 20pt;
+    font-size: 4em;
+  }
+  #hero div:first-of-type p {
+    font-size: 1.2em;
+  }
+}
 @media screen and (max-width: 959px) {
   #hero img:first-of-type {
     width: 40vw;
@@ -82,8 +92,8 @@ header img:first-of-type {
     margin: 30pt 0 60pt;
   }
   #hero div:first-of-type h1 {
-    padding-left: 120pt;
-    padding-right: 120pt;
+    padding-left: 100pt;
+    padding-right: 100pt;
     text-align: center;
   }
   #hero div:first-of-type p {
@@ -110,6 +120,30 @@ header img:first-of-type {
     padding-right: 15pt;
     font-size: 1.1em;
     line-height: 1.7em;
+  }
+}
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  #hero {
+    display: flex;
+    text-align: left;
+  }
+  #hero img:first-of-type {
+    width: 35vh;
+    height: 35vh;
+    margin: 0;
+  }
+  #hero div:first-of-type h1 {
+    padding-left: 40pt;
+    padding-right: 0;
+    font-size: 2.5em;
+    text-align: left;
+  }
+  #hero div:first-of-type p {
+    padding-left: 40pt;
+    padding-right: 0;
+    font-size: 1.1em;
+    text-align: left;
+    line-height: 1.5em;
   }
 }
 #contact {
@@ -160,10 +194,13 @@ header img:first-of-type {
 
 @media screen and (max-width: 959px) {
   #contact h2 {
-    font-size: 21pt;
+    font-size: 18pt;
+  }
+  #contact h2 span {
+    font-size: 12pt;
   }
   #contact form {
-    padding-top: 12pt;
+    padding-top: 22pt;
   }
 }
 @media screen and (max-width: 575px) {
@@ -181,6 +218,23 @@ header img:first-of-type {
   }
   #contact form input[type=email] {
     margin-bottom: 20pt;
+  }
+}
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  #contact {
+    padding: 10pt 0;
+  }
+  #contact h2 {
+    font-size: 15pt;
+  }
+  #contact h2 span {
+    font-size: 12pt;
+  }
+  #contact form {
+    padding-top: 15pt;
+  }
+  #contact form input {
+    font-size: 12pt;
   }
 }
 #contact #mlb2-4099095 button.loading {
