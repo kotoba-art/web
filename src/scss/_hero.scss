@@ -37,25 +37,6 @@
 }
 
 
-@media screen and (max-width: 1024px) {
-    #hero {
-        div {
-            &:first-of-type {
-                h1 {
-                    padding-left: 0;
-                    padding-right: 20pt;
-                    font-size: 4em;
-                }
-
-                p {
-                    font-size: 1.2em;
-                }
-            }
-            
-        }
-    }
-}
-
 
 @media screen and (max-width: 959px) {
     #hero {
@@ -72,8 +53,8 @@
             &:first-of-type {
             
                 h1 {
-                    padding-left: 100pt;
-                    padding-right: 100pt;
+                    padding-left: 120pt;
+                    padding-right: 120pt;
                     text-align: center;
                 }
 
@@ -118,44 +99,6 @@
                     line-height: 1.7em;
                 }
 
-            }
-        }
-
-    }
-}
-
-@media screen and (max-width: 812px) and (orientation: landscape) {
-    #hero {
-        display: flex;
-        text-align: left;
-
-        img {
-            &:first-of-type {
-                width: 35vh;
-                height: 35vh;
-                margin: 0;
-            }
-        }
-
-        div {
-            &:first-of-type {
-            
-                h1 {
-                    padding-left: 40pt;
-                    padding-right: 0;
-                    font-size: 2.5em;
-                    text-align: left;
-                }
-
-                p {
-                    padding-left: 40pt;
-                    padding-right: 0;
-                    font-size: 1.1em;
-                    text-align: left;
-                    line-height: 1.5em;
-
-
-                }
             }
         }
 
