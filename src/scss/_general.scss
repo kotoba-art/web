@@ -1,8 +1,11 @@
 @use 'config';
 
-body {
-    height: 100vh;
+
+
+body {    
+    height: 100%;
     font-weight: 400;
+    // overflow-y: hidden;
 }
 
 ::selection {
@@ -53,8 +56,51 @@ header {
     }
 }
 
+
+footer {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    color: #FFF;
+    font-size: 0.72em;
+    text-align: center;
+    background-color: #111;
+
+        .container {
+            padding-top: 15pt;
+            padding-bottom: 15pt;
+            border-top: thin solid #222;
+
+            p {
+                margin: 0;
+            }
+    }
+
+    .k_simbol {
+        width: 85pt;
+        margin-top: 12pt;
+        margin-right: 5pt;
+        margin-bottom: 15pt;
+    }
+    
+}
+
 @media screen and (max-width: 575px) { 
     body {
+    
         // overflow: hidden;
     }
+
+    header {
+        padding: 10pt 0;
+
+        img{
+            &:first-of-type {
+                width: 80pt;   
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
 }

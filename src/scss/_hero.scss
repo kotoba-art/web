@@ -124,6 +124,34 @@
     }
 }
 
+@media screen and (max-width: 375px) {
+
+    #hero {
+        
+        img {
+            &:first-of-type {
+                width: 30vw;
+            }
+        }
+
+        div {
+            &:first-of-type {
+
+                h1 {
+                    font-size: 2em;
+                    padding: 0 10pt;
+                }
+
+                p {
+                    font-size: 0.9em;
+                    padding: 0 10pt;
+                }
+            }
+        }
+    }
+    
+}
+
 @media screen and (max-width: 812px) and (orientation: landscape) {
     #hero {
         display: flex;
