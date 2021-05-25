@@ -53,34 +53,73 @@ header img:first-of-type {
 
 footer {
   position: absolute;
-  top: 100%;
+  bottom: 0;
   width: 100%;
   color: #FFF;
   font-size: 0.72em;
+  color: #fff;
   text-align: center;
-  background-color: #111;
 }
-footer .container {
-  padding-top: 15pt;
-  padding-bottom: 15pt;
-  border-top: thin solid #222;
-}
-footer .container p {
+footer p {
   margin: 0;
+  padding: 0 5pt 0 0;
 }
 footer .k_simbol {
-  width: 85pt;
-  margin-top: 12pt;
+  width: 80pt;
   margin-right: 5pt;
-  margin-bottom: 15pt;
+  margin-bottom: 5pt;
+  color: aqua;
 }
 
+@media screen and (max-width: 812px) and (orientation: landscape) {
+  footer {
+    position: absolute;
+    display: flexbox;
+    top: 100%;
+    width: 100%;
+    height: 45pt;
+    color: #FFF;
+    font-size: 0.72em;
+    text-align: center;
+    background-color: #000;
+  }
+  footer p {
+    display: flexbox;
+  }
+  footer .k_simbol {
+    width: 85pt;
+    margin-top: 12pt;
+    margin-right: 5pt;
+    margin-bottom: 15pt;
+  }
+}
 @media screen and (max-width: 575px) {
   header {
     padding: 10pt 0;
   }
   header img:first-of-type {
     width: 80pt;
+  }
+
+  footer {
+    position: absolute;
+    display: flexbox;
+    top: 100%;
+    width: 100%;
+    height: 45pt;
+    color: #FFF;
+    font-size: 0.72em;
+    text-align: center;
+    background-color: #000;
+  }
+  footer p {
+    display: flexbox;
+  }
+  footer .k_simbol {
+    width: 85pt;
+    margin-top: 12pt;
+    margin-right: 5pt;
+    margin-bottom: 15pt;
   }
 }
 #hero {
@@ -144,19 +183,19 @@ footer .k_simbol {
     padding-left: 0;
     padding-right: 0;
     margin-bottom: 20pt;
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 400;
   }
   #hero div:first-of-type p {
     padding-left: 15pt;
     padding-right: 15pt;
-    font-size: 1.1em;
+    font-size: 1em;
     line-height: 1.7em;
   }
 }
 @media screen and (max-width: 375px) {
   #hero img:first-of-type {
-    width: 30vw;
+    width: 20vh;
   }
   #hero div:first-of-type h1 {
     font-size: 2em;
@@ -180,13 +219,13 @@ footer .k_simbol {
   #hero div:first-of-type h1 {
     padding-left: 40pt;
     padding-right: 0;
-    font-size: 2.5em;
+    font-size: 2.25em;
     text-align: left;
   }
   #hero div:first-of-type p {
     padding-left: 40pt;
     padding-right: 0;
-    font-size: 1.1em;
+    font-size: 0.85em;
     text-align: left;
     line-height: 1.5em;
   }
@@ -196,7 +235,7 @@ footer .k_simbol {
   bottom: 0;
   display: flex;
   width: 100%;
-  padding: 30pt 0;
+  padding: 30pt 0 40pt;
   color: #FFFFFF;
   background: black;
 }
@@ -270,16 +309,21 @@ footer .k_simbol {
     padding: 10pt 0;
   }
   #contact h2 {
-    font-size: 15pt;
+    font-size: 12pt;
   }
   #contact h2 span {
-    font-size: 12pt;
+    font-size: 10pt;
+    font-weight: 600;
   }
   #contact form {
-    padding-top: 15pt;
+    padding-top: 5pt;
   }
   #contact form input {
-    font-size: 12pt;
+    font-size: 0.85em;
+  }
+  #contact form .btn {
+    margin-top: 2pt;
+    padding: 5pt 15pt;
   }
 }
 #contact #mlb2-4099095 button.loading {

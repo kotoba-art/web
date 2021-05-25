@@ -95,6 +95,7 @@
         img {
             &:first-of-type {
                 width: 40vw;
+                // width: 15vh;
                 height: auto;
                 margin: 5pt 0 25pt;
             }
@@ -107,14 +108,14 @@
                     padding-left: 0;
                     padding-right: 0;
                     margin-bottom: 20pt;
-                    font-size: 3em;
+                    font-size: 2.5em;
                     font-weight: 400;
                 }
 
                 p {
                     padding-left: 15pt;
                     padding-right: 15pt;
-                    font-size: 1.1em;
+                    font-size: 1em;
                     line-height: 1.7em;
                 }
 
@@ -130,7 +131,8 @@
         
         img {
             &:first-of-type {
-                width: 30vw;
+                // width: 30vw;
+                width: 20vh;
             }
         }
 
@@ -171,14 +173,14 @@
                 h1 {
                     padding-left: 40pt;
                     padding-right: 0;
-                    font-size: 2.5em;
+                    font-size: 2.25em;
                     text-align: left;
                 }
 
                 p {
                     padding-left: 40pt;
                     padding-right: 0;
-                    font-size: 1.1em;
+                    font-size: 0.85em;
                     text-align: left;
                     line-height: 1.5em;
 
